@@ -1,11 +1,11 @@
 export default ({ env }) => ({
   upload: {
     config: {
-      provider: '@strapi/provider-upload-cloudinary',
+      provider: 'cloudinary',
       providerOptions: {
-        cloud_name: env('du9mlvwvw'),
-        api_key: env('239631828948374'),
-        api_secret: env('fwJReZERLg9YwpwIEl7h98Tip6c'),
+        cloud_name: env('CLOUDINARY_NAME'),
+        api_key: env('CLOUDINARY_KEY'),
+        api_secret: env('CLOUDINARY_SECRET'),
       },
       actionOptions: {
         upload: {},
